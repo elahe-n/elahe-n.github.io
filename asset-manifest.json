@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0c455af4.css",
+    "main.js": "/static/js/main.1b0a71d4.js",
+    "static/media/linux.png": "/static/media/linux.fc83497f728eb61ee596.png",
+    "static/media/Elahe.jpg": "/static/media/Elahe.bc77da35c51c771434fc.jpg",
+    "static/media/linkedin.png": "/static/media/linkedin.bd873427154d19f56150.png",
+    "static/media/adobeCloud.png": "/static/media/adobeCloud.f93432b003d60fbc2a79.png",
+    "static/media/facebook.png": "/static/media/facebook.691410d0976165e7e0b7.png",
+    "static/media/mongoDB.png": "/static/media/mongoDB.7a16fc61d457c9e340e2.png",
+    "static/media/firebase.png": "/static/media/firebase.dc97279feb2d91edd787.png",
+    "static/media/vs2.png": "/static/media/vs2.d793c746fbc937f66e3d.png",
+    "static/media/github.png": "/static/media/github.8e2a9e7d53fa4340a09e.png",
+    "index.html": "/index.html",
+    "main.0c455af4.css.map": "/static/css/main.0c455af4.css.map",
+    "main.1b0a71d4.js.map": "/static/js/main.1b0a71d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c455af4.css",
+    "static/js/main.1b0a71d4.js"
+  ]
+}
