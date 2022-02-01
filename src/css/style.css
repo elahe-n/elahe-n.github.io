@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(45deg,  rgb(248, 167, 224), rgb(141, 224, 230),rgb(228, 235, 108));
+  animation: gradient 15s ease infinite;
+  background-size: 300% 300%;
+  font-family: 'Balsamiq Sans', cursive,Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color:  rgba(255, 255, 255, 0.4);
+  padding: 1.75rem 0;
+
+}
+
+nav {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+nav a {
+  color: #111;
+  text-decoration: none;
+  padding: 1.75rem;
+}
+
+nav a:is(:hover, :focus-visible) {
+  background-color: rgb(224, 241, 182);
+  color: #222;
+  outline: 0;
+}
+
+article {
+  max-width: 80ch;
+  padding: 0 1rem;
+  margin: 1rem auto;
+}
+
+article section {
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+}
+
+.Skills, .Experience{
+ background-color:rgba(255, 255, 255, 0.2) ;
+ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+article h1,
+article h3,
+article img {
+  margin-bottom: 1rem;
+}
+
+article li {
+  margin: 0.5rem 0;
+  list-style-position: inside;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.elaheimg{
+  margin: 1rem 0;
+  height: 120px;
+  width: auto;
+  border-radius: 50%;
+}
+.uses{
+  padding-left:175px;
+}
+
+.frames{
+  padding-left: 130px;
+  gap:2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  margin: 2rem  0.5rem;
+  width: auto;
+  height: auto;
+}
+
+figure {
+  margin-top: 2rem auto;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  background: linear-gradient(-45deg,  #5cbde0, #9fe7d6, #e6b0c5);
+	background-size: 150% 200%;
+	animation: gradient 15s ease infinite;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 15%;
+}
+
+figure:is(:hover, :focus-visible) {
+  background: linear-gradient(-45deg,  #64cbf0, #69ebcc, #ec538e);
+	background-size: 200% 200%;
+  transform: scale(1.1) 
+}
+
+figure:hover .usesimg{
+
+  filter:brightness(120%); 
+  transition: opacity 0.5s ease-in-out,transform 0.5s ease-in-out;
+  transform: scale(1.1) rotate(-3deg);
+}
+
+figcaption {
+  padding-bottom:30px;
+  caption-side: bottom;
+  font-size: 1em;
+}
+
+.usesimg{ 
+  margin: 0 1rem;
+  height:150px;
+  width: 150px;
+  padding:30px;
+  text-align: center;
+}
+
+.getInTouch{
+  text-align: center;
+}
+
+form {
+  padding-top:5rem;
+  text-align: center; 
+}
+
+input {
+  border: none;
+  border-radius:4px;
+  height: 30px;
+  padding:0.25rem;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+  margin-left: 1.1rem;
+}
+
+.nameemail{
+  width: 22%;
+}
+
+.message{
+  width: 45%;
+  height: 60px;
+  margin-top:-0.5rem;
+}
+
+button {
+  background-image: linear-gradient(45deg,  #1faee2, #28f3c4);
+  border: 0;
+  border-radius: 4px;
+  color: #111;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+form button:hover {
+  background-image: linear-gradient(45deg, #28f3c4, #1faee2);
+  transition: ease-in-out;
+}
+
+.socialLogo{
+  margin: 0.5rem  0.5rem;
+  height:25px;
+  width: auto;
+}
+
+.socialLogo:hover{
+  filter:brightness(150%)
+}
+
+footer {
+  background-color:   rgba(255, 255, 255, 0.4);
+  color: #111;
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: auto;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width:1000px) {
+ 
+  .frames {
+    grid-template-columns: repeat(2, 1fr); 
+    padding:0 40px;
+    gap:1rem;
+  }
+
+  .uses{
+    padding-left:20px;
+  }
+
+  .usesimg{ 
+    margin: 0 0.5rem;
+    height:80px;
+    width: 80px;
+    padding:10px;
+    text-align: center;
+  }
+
+  figcaption {
+    padding-bottom:10px;
+    font-size: 0.7em;
+  }
+
+  form {
+    margin-top:3rem;
+    text-align: center; 
+  }
+  
+}
